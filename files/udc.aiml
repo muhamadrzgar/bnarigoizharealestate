@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            Wellcome to Bnari Goizha real estate 🙋 
+            How can I help you?
+    what property do you want?
+   Here are some options:
+    <button type="postback" title="House" payload="sleamni">House</button>
+    <button type="postback" title="Apartment" payload="Apartment">Apartment</button>
+     <button type="postback" title="House" payload="OPTION_1">Earth</button>
+    <button type="postback" title="Apartment" payload="OPTION_2">Villa</button>
+
+        </template>
+    </category>
+    
+    
+<category>
+    <pattern>Hi *</pattern>
+    <template><random>
+      <li>Hello! </li>
+      <li>Hi there! </li>
+      <li>Hey! </li>
+    </random>
+    How can I help you?
+    what property do you want?
+   Here are some options:
+    <button type="postback" title="House" payload="sleamni">House</button>
+    <button type="postback" title="Apartment" payload="Apartment">Apartment</button>
+     <button type="postback" title="House" payload="zawei">Earth</button>
+    <button type="postback" title="Apartment" payload="bax">Villa</button>
+        <button type="postback" title="Apartment" payload="con">contact</button>
+    </template>
+</category>
+
+<category>
+    <pattern>Earth</pattern>
+    <template>
+       ئەم زەویانە بەردەستن بۆ فرۆشتن
+         <carousel>
+          <card>
+                 <image>https://i.ibb.co/dQHbxGY/zawi1.jpg</image>
+                 <title>زەوی لە  گەڕەکی گشۆڕشی نوێ</title>
+                 <subtitle>ڕووبەر: ٢٠٠مەتر ، ڕوو: قیبلە</subtitle>
+                  <button>
+                <text>زانیاری زیاتر</text>
+                <postback>z10</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>zp10</postback>
+          </button>
+          <button>
+              <text>call now</text>
+              <postback>call</postback>
+          </button>
+             </card>
+             
+         <card>
+                 <image>https://i.ibb.co/GkPjW4q/z11.jpg</image>
+                 <title>زەوی لە گەرەکی گوڵەباخ</title>
+                 <subtitle>ڕووبەر: ١٥٧تر ، ڕوو: قیبلە</subtitle>
+                  <button>
+                <text>زانیاری زیاتر</text>
+                <postback>z11</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>zp11</postback>
+          </button>
+             </card>
+             
+         <card>
+                 <image>https://i.ibb.co/CB53MLw/zp12.jpg</image>
+                  <tittle>زەوی لە گەڕەکی شۆڕشی نوێ</tittle>
+                 <subtitle>ڕووبەر: ٢٠٠مەتر ، ڕوو: ڕۆژهەڵات</subtitle>
+                  <button>
+                <text>زانیاری زیاتر</text>
+                <postback>z12</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>zp12</postback>
+          </button>
+             </card>
+             
+             
+         </carousel>
+    
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>House</pattern>
+    <template>
+        Dou you want to buy or rent?
+    <button type="postback" title="buy" payload="Buy">Buy</button>
+    <button type="postback" title="rent" payload="Rent">Rent</button>
+   
+    </template>
+</category>
+
+<category>
+    <pattern>Apartment</pattern>
+    <template>
+        Dou you want to buy or rent?
+    <button type="postback" title="Apartmentsale" payload="ApartmentBuy">Buy Apartments</button>
+    <button type="postback" title="rentapart" payload="Rentapart">Rent Apartments</button>
+   
+    </template>
+</category>
+
+<category>
+    <pattern>Villa</pattern>
+    <template>
+        
+           ئەم موڵکانە بەردەستن بۆ فرۆشتن
+           
+                    <carousel>
+          <card>
+                 <image>https://i.ibb.co/JFt418G/bx101.jpg</image>
+                 <title>باخ لە میرگەپان</title>
+                 <subtitle>ڕووبەر: ١دۆنم ، ڕوو: قیبلە</subtitle>
+                  <button>
+                <text>زانیاری زیاتر</text>
+                <postback>v10</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>vp10</postback>
+          </button>
+             </card>
+             </carousel>
+ 
+    </template>
+</category>
+
+<category>
+    <pattern>Contact us</pattern>
+    <template>
+      
+    </template>
+</category>
+
+
+
+
+<category>
+    <pattern>Buy</pattern>
+    <template>
+       Please click the button to view propertis.
+      <button type="postback" title="buyhousesul" payload="Slemani">View Property</button>
+ 
+     
+    </template>
+</category>
+
+<category>
+    <pattern>Rent</pattern>
+    <template>
+        Please click the button to view propertis.
+      <button type="postback" title="renthousesul" payload="Sulirent">Rent in Slemani</button>
+ 
+    
+    </template>
+</category>
+
+<category>
+    <pattern>View Property</pattern>
+    <template>
+        ئەم موڵکانە بەردەستن
+        <carousel>
+            <card>
+                <image>https://i.ibb.co/VxXGXHK/p1.jpg</image>
+                <title>خانوو له‌ كازیوه‌</title>
+                <subtitle>ڕووبه‌ر: ٢٠٠م  نهۆم: ٢</subtitle>
+                <button>
+                    <text>زانیاری زیاتر</text>
+                    <postback>s10</postback>
+                </button>
+                 <button>
+                    <text>وێنه‌كانی موڵك‌</text>
+                    <postback>p10</postback>
+                </button>
+            </card>
+                <card>
+                <image>https://i.ibb.co/N2B47GF/p111.jpg</image>
+                <title>خانوو له‌ كانی گۆمه‌‌</title>
+                <subtitle>ڕووبه‌ر:١٨٠م  نهۆم: ١</subtitle>
+                <button>
+                    <text>زانیاری زیاتر</text>
+                    <postback>s11</postback>
+                </button>
+                 <button>
+                    <text>وێنه‌كانی موڵك‌</text>
+                    <postback>p11</postback>
+                </button>
+            </card>
+            
+        </carousel>
+        
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>s10</pattern>
+    <template>
+  
+        <ul>
+            <li>ڕووبەر: ٢٠٠مەتر</li>
+            <li>ژمارەی نهۆم: ٣نهۆم</li>
+            <li>شەقام: ٢٠مەتری</li>
+            <li>ژمارەی پەیوەندی:07721050885  </li>
+            <li>ناونیـشان: کازیوەی ٢ نزیک گۆیژە سیتی</li>
+      
+        </ul>
+ خانوو بۆ فڕۆشتن🏠 
+پێکهاتووە لە 3 نهۆم 
+نهۆمی یەک:
+گەراجی دفن  , مشتملات
+نهۆمی دوو:
+- 2 نوستن ‌- هۆڵ - میوان- نانخواردن- مشتملات- باخچە- بالکۆن
+نهۆمی سێ:
+- 2 نوستن ‌- هۆڵ- میوان- نانخواردن- مشتملات- هەورەبانی فراوان
+تایبەتماندییەکان :
+-بیرێکی زۆر باشی تێدایە
+- بەرامبەری فەرعە 
+- نزیک جادەی سەرەکییە
+
+
+
+
+    </template>
+</category>
+
+<category>
+    <pattern>p10</pattern>
+    <template>
+        <image>https://i.ibb.co/VxXGXHK/p1.jpg</image>
+       <image>https://i.ibb.co/xM5K2Y2/p2.jpg</image>
+       <image>https://i.ibb.co/4VyKbZK/p3.jpg</image></template>
+</category>
+
+<category>
+    <pattern>s11</pattern>
+    
+   
+    <template>
+  
+        <ul>
+            <li>ڕووبەر: ١٨٠مەتر</li>
+            <li>ژمارەی نهۆم: ١نهۆم</li>
+            <li>شەقام: ١٠مەتری</li>
+            <li>ژمارەی پەیوەندی:
+            <link>
+                <text>07721050885</text>
+                <url>07721050885</url>
+            </link>
+            </li>
+            <li>ناونیـشان: کانی گۆمە نزیک ئاسایش</li>
+            
+        </ul>
+ خانوو بۆ فڕۆشتن🏠 
+ێکهاتووەلە :
+2 نووستن - میوان - هۆڵ - نانخواردن -مساعد متبخ - 
+مشتملات
+
+    </template>
+</category>
+<category>
+    <pattern>p11</pattern>
+    <template>
+        <image>https://i.ibb.co/N2B47GF/p111.jpg</image>
+       <image>https://i.ibb.co/DrCs7FY/p112.jpg</image>
+       <image>https://i.ibb.co/bQr8N2q/p113.jpg</image></template>
+</category>
+
+
+
+
+<category>
+    <pattern>Rent in Slemani</pattern>
+    <template> ئەم موڵکانە بەردەستن.
+    <carousel>
+        <card>
+            <image>https://i.ibb.co/94zbvxr/sr1.jpg</image>
+            <title>خانوو لە کۆمپانیای نەوزاد</title>
+            <subtitle>ڕووبەر:٢٠٠م  نهۆم:١</subtitle>
+            <button>
+                <text>زانیاری زیاتر</text>
+                <postback>r10</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>rp10</postback>
+          </button>
+        </card>
+       
+    </carousel>
+     </template>
+</category>
+
+<category>
+    <pattern>r10</pattern>
+    <template>
+        
+  
+        <ul>
+            <li>ڕووبەر: ٢٠٠مەتر</li>
+            <li>ژمارەی نهۆم: ١نهۆم</li>
+            <li>شەقام: ٢٠مەتری</li>
+            <li>ژمارەی پەیوەندی:07721050885  </li>
+            <li>ناونیـشان: کۆمپانیای نەوزاد</li>
+            <li>rp10 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+        </ul>
+ خانوو بۆ کرێ🏠 
+ڕووی نێوان ڕۆژهەڵات و قیبلەیە
+پێکهاتووەلە :
+2 نووستن - میوان - هۆڵ و نانخواردن پێکەوە (کراوە)
+مشتملات
+تایبەتماندییەکان :
+- سەقف مەغریبی
+- دکتی موبەڕیدە
+- بەرامبەری ماڵ نییە
+
+    </template>
+</category>
+
+   <category>
+    <pattern>rp10</pattern>
+    <template>
+        <image>https://i.ibb.co/94zbvxr/sr1.jpg</image>
+       <image>https://i.ibb.co/KNGKPgb/sr2.jpg</image>
+       <image>https://i.ibb.co/fFkzd4W/sr3.jpg</image>
+       </template>
+</category>
+
+<category>
+    <pattern>Buy Apartments</pattern>
+    <template> 
+       <carousel>
+        <card>
+            <image>https://i.ibb.co/zhzYDN7/ap103.jpg</image>
+            <title>شوقە لە بەرزایەکانی قەیوان</title>
+            <subtitle>ڕووبەر:١٠٩م  نهۆم:٨</subtitle>
+            <button>
+                <text>زانیاری زیاتر</text>
+                <postback>a10</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>ap10</postback>
+          </button>
+        </card>
+            <card>
+            <image>https://i.ibb.co/2ncCJ6b/ap114.jpg</image>
+            <title>شوقە لە بەرزایەکانی قەیوان</title>
+            <subtitle>ڕووبەر:١٣٦م نهۆم:٤</subtitle>
+            <button>
+                <text>زانیاری زیاتر</text>
+                <postback>a11</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>ap11</postback>
+          </button>
+        </card>
+        <card>
+            <image>https://i.ibb.co/B3RmvLH/a121.jpg</image>
+            <title>شوقە لە شاری مامۆستایان</title>
+            <subtitle>ڕووبەر:١١٥م نهۆم:٧</subtitle>
+            <button>
+                <text>زانیاری زیاتر</text>
+                <postback>a12</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>ap12</postback>
+          </button>
+        </card>
+        
+    </carousel>
+    </template> 
+</category>
+
+<category>
+<pattern>Rent Apartments</pattern>
+    
+    <template> 
+    ئەم موڵکانە بەردەستن بۆ کرێ.
+     <carousel>
+        <card>
+            <image>https://i.ibb.co/gSQ8SQv/ar101.jpg</image>
+            <title>شوقە لە شاری گۆیژەی ١</title>
+            <subtitle>ڕووبەر: 150مەتر ،ژمارەی نهۆم:٣</subtitle>
+           <button>
+                <text>زانیاری زیاتر</text>
+                <postback>apr10</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>ra10</postback>
+          </button>
+        </card>
+              <card>
+            <image>https://i.ibb.co/gSQ8SQv/ar101.jpg</image>
+            <title>شووقە لە جاف تاوەرس</title>
+          <subtitle>ڕووبەر:٤٠٠مەتر نهۆم:١٢</subtitle>e>
+           <button>
+                <text>زانیاری زیاتر</text>
+                <postback>apr11</postback>
+            </button>
+          <button>
+              <text>وێنەکانی موڵک</text>
+              <postback>ra11</postback>
+          </button>
+        </card>
+    </carousel>
+    </template>
+   
+   
+</category>
+
+
+
+
+<category>
+    <pattern>a10</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: ١٣٦مەتر</li>
+            <li>ژمارەی نهۆم: ٨ </li>
+             <li>ڕوو:سلێمانی</li>
+            <li>B9 :ژمارەی شوقە</li>
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان: بەرزاییەکانی قەیوان</li>
+            <li>ap10 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+            </ul>
+            ێکهاتوە لە :
+[ میوان و هۆڵ کراوە + مطبخ + 3 نوستن یەکێکیان ماستەرە+ 
+2مشتەمەلات + مەخزەن + 2 بالکۆن ]
+شوقەیەكی زۆر پاك و خاوێنە  و كەم بەكار هاتووە سەقفی مەغریبی و عەرزی تەختە
+        
+    </template>
+</category>
+<category>
+    <pattern>ap10</pattern>
+    <template>
+        <image>https://i.ibb.co/WF8YCvC/ap101.jpg</image>
+        <image>https://i.ibb.co/QPq02dw/ap102.jpg</image>
+        <image>https://i.ibb.co/zhzYDN7/ap103.jpg</image>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>a11</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: ١٠٩مەتر</li>
+            <li>ژمارەی نهۆم: ٤ </li>
+             <li>ڕوو:سلێمانی</li>
+            <li>C4 :ژمارەی شوقە</li>
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان: بەرزاییەکانی قەیوان</li>
+            <li>ap11 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+            </ul>
+پێکهاتووەلە:
+- 2 نوستن
+- میوان
+- نانخواردن
+- 2 مشتملات
+        
+    </template>
+</category>
+<category>
+    <pattern>ap11</pattern>
+    <template>
+        <image>https://i.ibb.co/CwKpChS/ap112.jpg</image>
+        <image>https://i.ibb.co/2ncCJ6b/ap114.jpg</image>
+        <image>https://i.ibb.co/kGkr8kJ/ap1111.jpg</image>
+    </template>
+</category>
+
+
+<category>
+    <pattern>a12</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: 115مەتر</li>
+            <li>ژمارەی نهۆم: ٧ </li>
+             <li>ڕوو: قیبلە </li>
+            <li>H7 :ژمارەی شوقە</li>
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان: شاری مامۆستایان</li>
+            <li>ap12 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+            </ul>
+ڕوکنە ، ڕووی ڕۆژهەڵات و قیبلەیە
+
+پێکهاتووەلە 
+3 نوستن -  هۆڵ - نانخواردن - بالکۆن-  مشتملات
+
+تایبەتماندییەکان:
+- کەوانتەری لەگەڵدایە
+- ڕوکنە 
+-ڕووی ڕۆژهەڵاتە و قیبلەیە
+        
+    </template>
+</category>
+<category>
+    <pattern>ap12</pattern>
+    <template>
+        <image>https://i.ibb.co/B3RmvLH/a121.jpg</image>
+        <image>https://i.ibb.co/1T3KfFm/a122.jpg</image>
+        <image>https://i.ibb.co/56HFhyx/a123.jpg</image>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>apr10</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: 150مەتر</li>
+            <li>ژمارەی نهۆم: 3 </li>
+             <li>ڕوو: قیبلە </li>
+            <li>A1 :ژمارەی شوقە</li>
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان: گۆیژە سیتی ١</li>
+            <li>ra10 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+            </ul>
+  ووی سلێمانی  
+نهومی بەرز
+لە عیمارەی A1
+٢ نوستن ميوان مەتبەخ
+کامل ئەساس بەکار نەهاتووە
+خزمەت گوزاری ئاو و کارەبا و سکويرتی ٢٤ کاتژمێر
+
+    </template>
+</category>
+<category>
+    <pattern>ra10</pattern>
+    <template>
+        <image>https://i.ibb.co/Z8jmfp0/apr102.jpg</image>
+        <image>https://i.ibb.co/sF3sNZD/apr103.jpg</image>
+        <image>https://i.ibb.co/yqVdWpt/apr104.jpg</image>
+         <image>https://i.ibb.co/gSQ8SQv/ar101.jpg</image>
+    </template>
+</category>
+
+
+<category>
+    <pattern>apr11</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: 400مەتر</li>
+            <li>ژمارەی نهۆم: 12 </li>
+             <li>ڕوو: ۆژهەڵات و گۆیژە </li>
+            <li>A1 :ژمارەی شوقە</li>
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان:جاف تاوەرس سەرجنار</li>
+            <li>ra11 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+            </ul>
+#شووقە بۆ کرێ لە سلێمانی جاف تاوەر
+⊙ ڕووبەری : 400 مەتر
+⊙ ڕووی : ڕۆژهەڵات و گۆیژە
+#پێکهاتووە لە :
+میوان و هۆڵ و مطبخ کراوە + ٤ ژووری نووستن دووانیان ماستەرن + ۲ مەخزەن +۲ مشتملات + ۳ بالکۆن
+#تێبینی : کامل مواصفات  ئاو + كارەبا + غاز  ۲٤ سعات 
+یان سەردانی ئۆفیسی سەرەکی نوسینگەی(بناری گۆیژە) بکەن
+
+    </template>
+</category>
+<category>
+    <pattern>ra11</pattern>
+    <template>
+        <image>https://i.ibb.co/XjPG7DM/apr112.jpg</image>
+        <image>https://i.ibb.co/r0Vq6Gs/apr113.jpg</image>
+        <image>https://i.ibb.co/W2W1q0m/apr114.jpg</image>
+         <image>https://i.ibb.co/pPQKjXb/par111.jpg</image>
+    </template>
+</category>
+
+
+
+
+<category>
+    <pattern>z10</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: 200مەتر</li>
+            <li>ژمارەی زەوی: ١٠/٨٥١ </li>
+             <li>ڕوو: قیبلە </li>
+            
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان:شۆڕشی نوێ</li>
+            <li>zp10 بۆ بینینی وێنەکانی ئەم زەویە بنووسە</li>
+            </ul>
+زەوی بۆ فرۆشتن
+سـلێمانی📍 10کانی شۆڕشی نوێ | خوار شاری سپی
+نزیک مزگەوتەکە
+ڕوبەری : ( 200 ) مەترە —  10 به 20
+ڕوو : قیبلە - کۆڵانی 10 مەتریە 
+
+    </template>
+</category>
+<category>
+    <pattern>zp10</pattern>
+    <template>
+        <image>https://i.ibb.co/dQHbxGY/zawi1.jpg</image>
+     
+    </template>
+</category>
+
+
+
+
+<category>
+    <pattern>z11</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: 157مەتر</li>
+            <li>ژمارەی زەوی: 31/1234 </li>
+             <li>ڕوو: قیبلە </li>
+            
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>گەڕەکی گوڵەباخ</li>
+            <li>zp11 بۆ بینینی وێنەکانی ئەم زەویە بنووسە</li>
+            </ul>
+زەوی بۆ فرۆشتن
+سـلێمانی📍 157ی دکتۆرەکان | گەڕەکی گوڵەباخ
+بەرامبەر شاری پزیشکان
+ڕوبەری : ( 200 ) مەترە —  8 به 25
+ڕوو : نـاوشـار - کۆڵانی 15 مەتریە - بەرامبەری حەدیقەیە 
+
+    </template>
+</category>
+<category>
+    <pattern>zp11</pattern>
+    <template>
+        <image>https://i.ibb.co/GkPjW4q/z11.jpg</image>
+     
+    </template>
+</category>
+
+
+<category>
+    <pattern>z12</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر: 200مەتر</li>
+            <li>ژمارەی زەوی: ١٠/٨٥١ </li>
+             <li>ڕوو: ۆژهەڵات </li>
+            
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان:شۆڕشی نوێ</li>
+            <li>zp12 بۆ بینینی وێنەکانی ئەم زەویە بنووسە</li>
+            </ul>
+#زەوی بۆ فرۆشتن لە سلێمانی ١٠ کانی شۆڕشی نوێ 
+#بەنرخێکی زۆر گونجاو 
+ڕوبەری ( 200 ) مەترە  |  ڕووی ڕۆژهەڵات 
+گەڕەکی 12 مەتری شوێنەکەی تەختە و هیچ
+ مەسروفی نیە لە شوێنێکی بەرز و دڵ گیردایە
+ نزیک #جادەی سەرەکیە  
+
+    </template>
+</category>
+<category>
+    <pattern>zp12</pattern>
+    <template>
+        <image>https://i.ibb.co/CB53MLw/zp12.jpg</image>
+     
+    </template>
+</category>
+
+
+<category>
+    <pattern>v10</pattern>
+    <template>
+           <ul>
+            <li>ڕووبەر:١ دۆنم</li>
+            <li>ڕووبه‌ری خانوو: ٢٥٠ مه‌تر </li>
+             <li>ڕوو: قیبلە </li>
+    
+            <li>ژمارەی پەیوەندی: 07721050885  </li>
+            <li>ناونیـشان: گ قزلەر پێش مێرگەپان</li>
+            <li>vp10 بۆ بینینی وێنەکانی ئەم خانووە بنووسە</li>
+            </ul>
+باخ بۆ فڕۆشتن🏠 لە قزلەر پێش مێرگەپان
+ڕووبەر:  یەک دۆنم🗺️ 
+ڕووبەری خانوو: 250m
+پێکهاتووەلە :
+- خانوو
+- گەراجی دفن
+- مەخزەن
+ - ژووری ئاژەڵ
+- مەلەوانگەی کاشی
+- فوارەی ئاو
+تایبەتماندییەکان :
+- بیری تێدایە
+- کارەبا و ئاوی ڕەیسی هەیە
+- نزیکە لە جادەی ڕەیسی
+    </template>
+</category>
+<category>
+    <pattern>vp10</pattern>
+    <template>
+        <image>https://i.ibb.co/JFt418G/bx101.jpg</image>
+        <image>https://i.ibb.co/jzvJ6JH/bx102.jpg</image>
+        <image>https://i.ibb.co/hWVBRhf/bx103.jpg</image>
+         <image>https://i.ibb.co/2cY6vsh/bx104.jpg</image>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>call</pattern>
+    <template>
+        <a herf="tel:+9647708203939"></a>
+    </template>
+</category>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</aiml>
+
